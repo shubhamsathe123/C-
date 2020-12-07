@@ -1,0 +1,16 @@
+#include<iostream.h>
+using namespace std;
+int main()
+{
+ int no;
+ cout<<"enter the no:\n";
+cin>>no;
+if (no%2==0)
+ {
+ cout<<"enter no is even:\n";
+ }
+else 
+ {
+ cout<<"enter no is odd:\n";
+ }
+}

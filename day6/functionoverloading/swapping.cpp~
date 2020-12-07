@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+class AAA
+{
+
+public:
+    void Swap(int a, int b)
+    {
+        int temp;
+        cout << "\nEnter two numbers to swap";
+        cin >> a >> b;
+        temp = a;
+        a = b;
+        b = temp;
+        cout << "\nAfter swapping- \nFirst Number is : " << a << "\nSecond Number is: " << b;
+    }
+
+    void Swap(char x, char y)
+    {
+        char tmp;
+        cout << "\Enter characters to swap";
+        cin >> x >> y;
+        tmp = x;
+        x = y;
+        y = tmp;
+        cout << "\nAfter swapping :- \nFirst Character: " << x << "\nSecond Character: " << y;
+    }
+};
+
+int main()
+{
+    AAA aaa;
+    int c, d, op;
+    char w, z;
+
+    cout << "\nEnter your choice:\n1.Numbers\t2.Characters";
+    cin >> op;
+
+    switch (op)
+    {
+    case 1:
+        aaa.Swap(c,d);
+        break;
+
+    case 2:
+       aaa.Swap(w,z);
+       break;
+
+    default:
+        cout << "\nPlease enter correct choice";
+        break;
+    }
+    cout << "\nThank You!!\n";
+}

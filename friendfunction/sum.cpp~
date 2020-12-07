@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+class data1
+{
+class data2
+{
+    friend void sum(data1 &a,data2 &b);
+    public:
+    int p,q;
+
+};
+
+class data1
+{
+    friend void sum(data1 &a,data2 &b);
+    public:
+    int x,y;
+
+};
+void sum(data1 &a,data2 &b)
+{
+    cout<<"sum is"<<(a.x+a.y+b.p+b.q);
+    cout<<"/n";
+}
+}
+
+int main()
+{
+    data1 i;
+    data2 j;
+    i.x=10;
+    i.y=20;
+    j.p=30;
+    j.q=40;
+    sum(i,j);
+}
